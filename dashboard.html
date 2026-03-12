@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Panel - Mi Swing Dance Company</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Mi Swing Dance Company</h1>
+
+<h2>Panel de Asistencia</h2>
+
+<h3>Estudiantes hoy</h3>
+
+<p>{{hoy}}</p>
+
+<h3>Lista</h3>
+
+<ul>
+
+{% for persona in lista %}
+
+<li>{{persona[0]}} - {{persona[1]}}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+</body>
+
+</html>
